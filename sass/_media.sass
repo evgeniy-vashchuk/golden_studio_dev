@@ -1,0 +1,342 @@
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+
+	.header
+		.header__greeting
+			font-size: 30px
+		.header__main-title
+			font-size: 60px
+	.services
+		padding-top: 80px
+		padding-bottom: 80px
+		.services__article
+			width: 100%
+			margin-top: 50px
+	.article
+		.article__text
+			padding: 0 200px
+	.portfolio
+		padding-top: 80px
+		padding-bottom: 80px
+		.portfolio__text
+			margin-bottom: 60px
+		.portfolio__items
+			text-align: center
+
+	.example
+		float: none
+		display: inline-block
+		&:nth-child(3)
+			margin-right: 36px
+		&:nth-child(2n)
+			margin-right: 0
+		&:nth-child(5)
+			margin-bottom: 0
+		&:nth-child(6)
+			margin-bottom: 0
+	.about-us
+		padding-top: 80px
+		padding-bottom: 80px
+		.about-us__text
+			padding-bottom: 50px
+		.about-us__picture
+			margin: 15px auto
+		.about-us__picture--last
+			margin-bottom: 0
+
+	.connections
+		display: none
+	.description, .description--right
+		float: none
+		width: 100%
+		margin: 0 auto
+		.description__date, .description__name, .description__text
+			text-align: center
+
+	.our-team
+		padding-top: 80px
+		padding-bottom: 80px
+		.our-team__text
+			padding-bottom: 0px
+	.profile
+		width: 100%
+		float: none
+		margin: 30px auto 0
+		.profile__photo
+			width: 300px
+			height: 300px
+
+	.company-wrapper
+		margin: 0 auto
+		.company-left
+			width: 100%
+			float: none
+			margin-bottom: 10px
+			text-align: center
+		.company-right
+			width: 100%
+			float: none
+			text-align: center
+
+	.company
+		padding-top: 30px
+		padding-bottom: 30px
+		.company__envato
+			img
+				margin-right: 15px
+		.company__wordpress
+			img
+				margin-left: 15px
+		.company__ae-tuts
+			img
+				margin-right: 30px
+				margin-left: 0
+		.company__microlancer
+			img
+				margin-left: 15px
+
+	.contact-us
+		padding-top: 80px
+		padding-bottom: 80px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.header
+		.header__menu
+			li
+				padding-left: 8px
+				padding-right: 8px
+				border-left: solid 1px $accent_color
+				&:first-child
+					padding-left: 10px
+					border-left: none
+
+		.header__greeting
+			font-size: 23px
+		.header__main-title
+			font-size: 40px
+			padding-top: 20px
+
+
+	.article
+		.article__text
+			margin-bottom: 20px
+			padding: 0 100px
+		.article__text--mobile
+			margin-bottom: 0
+
+	.services
+		padding-top: 50px
+		padding-bottom: 50px
+		.services__article
+			margin-top: 20px
+			margin-right: 0
+			border-bottom: 1px solid rgba($accent_color, .5)
+			&:last-child
+				border-bottom: none
+	.portfolio
+		padding-top: 50px
+		padding-bottom: 50px
+		.portfolio__text
+			margin-bottom: 50px
+
+	.about-us
+		padding-top: 50px
+		padding-bottom: 50px
+
+	.our-team
+		padding-top: 50px
+		padding-bottom: 50px
+		.our-team__description
+			padding-right: 0
+			padding-left: 0
+		.our-team__wrapper
+			padding: 0
+
+	.loader
+		width: 75px
+		height: 75px
+
+	.contact-us
+		padding-top: 50px
+		padding-bottom: 50px
+		.contact-us__text
+			padding-bottom: 50px
+
+	.footer
+		padding-top: 13px
+		.footer__copyright-wrap
+			.footer__copyright
+				top: 33px
+				width: 100%
+				text-align: center
+
+@media only screen and (max-width : 637px)
+
+	.example
+		margin: 0 25px
+		margin-bottom: 25px
+		&:nth-child(3)
+			margin-right: 25px
+		&:nth-child(2n)
+			margin-right: 25px
+		&:nth-child(5)
+			margin-bottom: 25px
+
+	.contact-us
+		.contact-us__person-data, .contact-us__message
+			float: none
+			width: 100%
+			padding-left: 15px
+			padding-right: 15px
+		.contact-us__name
+			margin-bottom: 20px
+		.contact-us__e-mail
+			margin-bottom: 20px
+		.contact-us__subject
+			margin-bottom: 20px
+
+
+@media only screen and (max-width : 600px)
+
+	.pop-up
+		.pop-up__main-text
+			font-size: 30px
+
+	.remodal
+		padding-left: 20px
+		padding-right: 20px
+		padding-bottom: 20px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 520px)
+
+	.top
+		display: none
+
+	.header
+		height: 400px
+		.header__logo
+			margin-top: 20px
+		.header__greeting
+			padding-top: 150px
+			font-size: 22px
+		.header__main-title
+			padding-top: 15px
+			font-size: 33px
+		.btn 
+			width: 200px
+			padding: 15px
+		#touch-menu
+			margin-top: 25px
+			display: block
+			+tr(0.3s)
+		.header__menu
+			display: none
+		.header__hidden
+			display: none
+			float: left
+			margin-top: 49px
+			.header__menu-2
+				margin-top: 20px
+				width: 100%
+				min-width: 220px
+				display: table
+				.menu-2
+					display: table-row
+					li
+						display: table-cell
+						float: none
+						width: 33.3%
+						padding-left: 0
+						a
+							display: block
+							text-align: center
+		#header__menu-2
+			margin-top: 5px
+			li
+				width: 20%
+	.article
+		.article__text
+			padding: 0
+
+	.help-text, .help-text--left
+		float: none
+		padding: 20px 0 0 0
+		text-align: center
+		.help-text__arrow
+			display: none
+		.help-text__arrow-2
+			display: inline
+			padding-top: 5px
+
+	.loader
+		width: 50px
+		height: 50px
+
+	.company-wrapper
+		margin: 0 auto
+		.company-left
+			width: 100%
+			float: none
+			margin-bottom: 10px
+			text-align: center
+		.company-right
+			width: 100%
+			float: none
+			text-align: center
+
+	.company
+		min-height: 0
+		padding: 20px 0
+		.company__envato
+			img
+				width: 130px
+		.company__wordpress
+			img
+				width: 160px
+		.company__ae-tuts
+			img
+				margin-right: 24px
+				width: 114px
+				height: initial
+		.company__microlancer
+			img
+				width: 154px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 392px)
+
+	.example
+		margin: 0 1px
+		margin-bottom: 25px
+		&:nth-child(5)
+			margin-bottom: 25px
+		&:nth-child(3)
+			margin-right: 1px
+		&:nth-child(2n)
+			margin-right: 1px
+
+	.profile
+		.profile__photo
+			width: 234px
+			height: 234px
+
+	.company
+		.company__envato
+			img
+				margin-right: 3px
+		.company__wordpress
+			img
+				margin-left: 3px
+		.company__ae-tuts
+			img
+				margin-right: 3px
+
